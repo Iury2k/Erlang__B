@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlang B Calculator</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+    <script type="text/javascript" src="erlang_b.js"></script>
+</head>
+<body onload="brython()">
+    <h1>Calculadora de Erlang B</h1>
+    <div>
+        <label for="option">Escolha uma opção:</label>
+        <select id="option">
+            <option value="1">Calcular N</option>
+            <option value="2">Calcular A</option>
+            <option value="3">Calcular B</option>
+        </select>
+        <button onclick="calculate()">Calcular</button>
+    </div>
+    <div id="input-fields">
+        <!-- Campos de entrada serão gerados aqui -->
+    </div>
+    <div id="result">
+        <!-- Resultado será exibido aqui -->
+    </div>
+</body>
+</html>
